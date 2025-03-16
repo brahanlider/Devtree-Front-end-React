@@ -1,10 +1,12 @@
-## 📜 INTALLATION 📜
+## 📜 INTALLATION Front-End📜
 
 - npm i tailwindcss 3.4.17
 - npm i react-router-dom 7.3.0
 - npm i react-hook-form
 - npm i axios
 - npm i sonner (toast)
+- npm i @heroicons/react
+- npm i -D @tailwindcss/forms
 
 # [DEVTREE Front-End React](https://github.com/brahan/devrtree)
 

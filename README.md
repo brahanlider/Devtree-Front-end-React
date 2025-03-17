@@ -7,6 +7,8 @@
 - npm i sonner (toast)
 - npm i @heroicons/react
 - npm i -D @tailwindcss/forms
+- npm i @tanstack/react-query
+- npm i @tanstack/react-query-devtools
 
 # [DEVTREE Front-End React](https://github.com/brahan/devrtree)
 

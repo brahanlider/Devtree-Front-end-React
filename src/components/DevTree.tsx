@@ -44,11 +44,17 @@ export default function DevTree({ data }: DevTreeProps) {
               <Outlet />
             </div>
             <div className="w-full px-5 py-10 space-y-6 md:w-96 bg-slate-800">
-              {/* //Agregar
-          // 
-          // 
-          // 
-          //  */}
+              <p className="text-4xl text-center text-white">{data.handle}</p>
+              {data.image && (
+                <img
+                  src={data.image}
+                  alt={`Imagen Perfil:  ${data.name}`}
+                  className="mx-auto max-w-[250px]"
+                />
+              )}
+              <p className="text-lg font-black text-center text-white">
+                {data.description}
+              </p>
             </div>
           </div>
         </main>

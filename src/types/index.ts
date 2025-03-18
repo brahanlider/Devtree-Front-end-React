@@ -4,6 +4,7 @@ export type TUser = {
   email: string;
   __id: string;
   description: string;
+  image: string;
 };
 
 export type RegisterForm = Pick<TUser, "handle" | "name" | "email"> & {

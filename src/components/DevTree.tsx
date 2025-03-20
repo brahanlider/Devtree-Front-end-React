@@ -1,13 +1,25 @@
 import { Link, Outlet } from "react-router-dom";
 import { Toaster } from "sonner";
 import NavigationTabs from "../components/NavigationTabs";
-import { TUser } from "../types";
+import { TSocialNetwork, TUser } from "../types";
+import { useEffect, useState } from "react";
+import DevTreeLink from "./DevTreeLink";
 
 type DevTreeProps = {
   data: TUser;
 };
 
 export default function DevTree({ data }: DevTreeProps) {
+  const [enabledLinks, setEnabledLinks] = useState<TSocialNetwork[]>(
+    JSON.parse(data.links).filter((item: TSocialNetwork) => item.enabled)
+  );
+
+  useEffect(() => {
+    setEnabledLinks(
+      JSON.parse(data.links).filter((item: TSocialNetwork) => item.enabled)
+    );
+  }, [data]);
+
   return (
     <>
       <header className="py-5 bg-slate-800">
@@ -25,7 +37,7 @@ export default function DevTree({ data }: DevTreeProps) {
           </div>
         </div>
       </header>
-      <div className="min-h-screen py-10 bg-gray-100">
+      <div className="min-h-screen py-10 bg-gray-100 md:px-5">
         <main className="max-w-5xl p-10 mx-auto md:p-0">
           <NavigationTabs />
           <div className="flex justify-end">
@@ -55,6 +67,12 @@ export default function DevTree({ data }: DevTreeProps) {
               <p className="text-lg font-black text-center text-white">
                 {data.description}
               </p>
+
+              <div className="flex flex-col gap-5 mt-20">
+                {enabledLinks.map((link) => (
+                  <DevTreeLink key={link.name} link={link} />
+                ))}
+              </div>
             </div>
           </div>
         </main>

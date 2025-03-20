@@ -9,6 +9,7 @@
 - npm i -D @tailwindcss/forms
 - npm i @tanstack/react-query
 - npm i @tanstack/react-query-devtools
+- npm install @headlessui/react
 
 # [DEVTREE Front-End React](https://github.com/brahan/devrtree)
 

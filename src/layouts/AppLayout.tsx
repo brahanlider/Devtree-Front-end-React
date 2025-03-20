@@ -15,7 +15,6 @@ export default function AppLayout() {
   if (isError) {
     return <Navigate to={"/auth/login"} />;
   }
-
   // ERRORES por ? => undefined = data?.__id
   // console.log(data?.__id)
   if (data) return <DevTree data={data} />;

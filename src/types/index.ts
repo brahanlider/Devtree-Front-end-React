@@ -5,6 +5,7 @@ export type TUser = {
   __id: string;
   description: string;
   image: string;
+  links:string
 };
 
 export type RegisterForm = Pick<TUser, "handle" | "name" | "email"> & {
@@ -17,3 +18,12 @@ export type LoginForm = Pick<TUser, "email"> & {
 };
 
 export type ProfileForm = Pick<TUser, "handle" | "description">;
+
+export type TSocialNetwork = {
+  id: number;
+  name: string;
+  url: string;
+  enabled: boolean;
+};
+
+export type TDevTreeLink = Pick<TSocialNetwork, "name" | "url" | "enabled">;

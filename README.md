@@ -10,6 +10,8 @@
 - npm i @tanstack/react-query
 - npm i @tanstack/react-query-devtools
 - npm install @headlessui/react
+- npm i @dnd-kit/core @dnd-kit/sortable @dnd-kit/utilities => DRAG AND DROP
+
 
 # [DEVTREE Front-End React](https://github.com/brahan/devrtree)
 

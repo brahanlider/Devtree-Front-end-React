@@ -94,7 +94,11 @@ export default function LinkTreeView() {
             id: 0,
             enabled: false,
           };
-        } else if (link.id > indexToUpdate) {
+        } else if (
+          link.id > indexToUpdate &&
+          indexToUpdate !== 0 &&
+          link.id === 1
+        ) {
           return {
             ...link,
             id: link.id - 1,
@@ -126,12 +130,10 @@ export default function LinkTreeView() {
       ))}
       <button
         className="w-full p-2 text-lg font-bold uppercase rounded-md bg-cyan-100 text-slate-600"
-        onClick={() => mutate(user)}
+        onClick={() => mutate(queryClient.getQueryData(["user"])!)}
       >
         Guardar Cambios
       </button>
     </div>
   );
 }
-
-// Faltar arreglar la logica para ordenar los id

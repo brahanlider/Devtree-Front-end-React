@@ -5,8 +5,13 @@ export type TUser = {
   __id: string;
   description: string;
   image: string;
-  links:string
+  links: string;
 };
+
+export type UserHandle = Pick<
+  TUser,
+  "description" | "handle" | "image" | "links" | "name"
+>;
 
 export type RegisterForm = Pick<TUser, "handle" | "name" | "email"> & {
   password: string;

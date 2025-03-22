@@ -39,3 +39,15 @@ export async function updateImage(file: File) {
     }
   }
 }
+
+export async function getUserByHandle(handle: string) {
+  try {
+    const url = `/${handle}`;
+    const { data } = await api(url);
+    return data;
+  } catch (error) {
+    if (isAxiosError(error) && error.response) {
+      throw new Error(error.response.data.error);
+    }
+  }
+}

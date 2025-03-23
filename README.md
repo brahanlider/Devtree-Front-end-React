@@ -1,21 +1,6 @@
-## 📜 INTALLATION Front-End📜
+# [DEVTREE](https://codigoconbrahan-devtree.netlify.app)
 
-- npm i tailwindcss 3.4.17
-- npm i react-router-dom 7.3.0
-- npm i react-hook-form
-- npm i axios
-- npm i sonner (toast)
-- npm i @heroicons/react
-- npm i -D @tailwindcss/forms
-- npm i @tanstack/react-query
-- npm i @tanstack/react-query-devtools
-- npm install @headlessui/react
-- npm i @dnd-kit/core @dnd-kit/sortable @dnd-kit/utilities => DRAG AND DROP
-- npm i react-slugify => para el handle
-
-# [DEVTREE Front-End React](https://github.com/brahan/devrtree)
-
-[![Img - DEVTREE](./img/devtree-eg.png)](https://github.com/el)
+[![Img - DEVTREE](./public/img/bg-devtree.png)](https://codigoconbrahan-devtree.netlify.app)
 
 ## 📜 Descripción 📜
 
@@ -25,74 +10,162 @@ DevTree es una plataforma en línea que permite a desarrolladores, diseñadores,
 
 - Ubicarse en la carpeta que contendrá el proyecto
 - Abrir terminal de comandos
-  - git clone https://github.com/brahanlider/Devtree.git
+  - git clone https://github.com/brahanlider/Devtree-Front-end-React.git
   - cd devtree
+  - npm install
   - Abrir el proyecto con un servidor en un cliente
+  - npm run dev
 
-## 📚 Tecnologías principales 📚
+## 📜 Tecnologías Front-End 📜
 
-| Tecnología | Versión | Descripción                      |
-| ---------- | ------- | -------------------------------- |
-| Express    | 4.21.2  | Lenguaje de Marcas de Hipertexto |
-| React      | 18      | Hojas de Estilo en Cascada       |
-| Tailwind   | 5       | Conjunto de íconos vectoriales   |
-| ts         | 5 .7.3  | Conjunto de íconos vectoriales   |
-| ts         | 5 .7.3  | Conjunto de íconos vectoriales   |
+<div style="max-height: 300px; overflow-y: auto;">
+  <table>
+    <thead>
+      <tr>
+        <th>Tecnología</th>
+        <th>Versión</th>
+        <th>Descripción</th>
+        <th>Instalación</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>React</strong></td>
+        <td>19.0.0</td>
+        <td>Librería para construir interfaces de usuario.</td>
+        <td><code>npm i react</code></td>
+      </tr>
+      <tr>
+        <td><strong>React DOM</strong></td>
+        <td>19.0.0</td>
+        <td>Librería para renderizar React en el navegador.</td>
+        <td><code>npm i react-dom</code></td>
+      </tr>
+      <tr>
+        <td><strong>Vite</strong></td>
+        <td>6.2.0</td>
+        <td>Herramienta de construcción rápida para aplicaciones modernas.</td>
+        <td><code>npm i vite</code></td>
+      </tr>
+      <tr>
+        <td><strong>TypeScript</strong></td>
+        <td>5.7.2</td>
+        <td>Lenguaje que añade tipos estáticos a JavaScript.</td>
+        <td><code>npm i -D typescript</code></td>
+      </tr>
+      <tr>
+        <td><strong>Tailwind CSS</strong></td>
+        <td>3.4.17</td>
+        <td>Framework de CSS utility-first para diseñar interfaces rápidamente.</td>
+        <td><code>npm i tailwindcss</code></td>
+      </tr>
+      <tr>
+        <td><strong>React Router DOM</strong></td>
+        <td>7.3.0</td>
+        <td>Librería para manejar rutas en aplicaciones React.</td>
+        <td><code>npm i react-router-dom</code></td>
+      </tr>
+      <tr>
+        <td><strong>React Hook Form</strong></td>
+        <td>7.54.2</td>
+        <td>Librería para manejar formularios en React de manera eficiente.</td>
+        <td><code>npm i react-hook-form</code></td>
+      </tr>
+      <tr>
+        <td><strong>Axios</strong></td>
+        <td>1.8.3</td>
+        <td>Cliente HTTP para hacer solicitudes a APIs.</td>
+        <td><code>npm i axios</code></td>
+      </tr>
+      <tr>
+        <td><strong>Sonner</strong></td>
+        <td>2.0.1</td>
+        <td>Librería para mostrar notificaciones tipo "toast".</td>
+        <td><code>npm i sonner</code></td>
+      </tr>
+      <tr>
+        <td><strong>Heroicons</strong></td>
+        <td>2.2.0</td>
+        <td>Conjunto de íconos para React.</td>
+        <td><code>npm i @heroicons/react</code></td>
+      </tr>
+      <tr>
+        <td><strong>@tailwindcss/forms</strong></td>
+        <td>0.5.10</td>
+        <td>Plugin de Tailwind CSS para estilizar formularios.</td>
+        <td><code>npm i -D @tailwindcss/forms</code></td>
+      </tr>
+      <tr>
+        <td><strong>React Query</strong></td>
+        <td>5.68.0</td>
+        <td>Librería para manejar el estado de las solicitudes HTTP y el caching.</td>
+        <td><code>npm i @tanstack/react-query</code></td>
+      </tr>
+      <tr>
+        <td><strong>React Query Devtools</strong></td>
+        <td>5.68.0</td>
+        <td>Herramientas de desarrollo para React Query.</td>
+        <td><code>npm i @tanstack/react-query-devtools</code></td>
+      </tr>
+      <tr>
+        <td><strong>Headless UI</strong></td>
+        <td>2.2.0</td>
+        <td>Componentes UI completamente accesibles y sin estilos.</td>
+        <td><code>npm i @headlessui/react</code></td>
+      </tr>
+      <tr>
+        <td><strong>DnD Kit</strong></td>
+        <td>6.3.1</td>
+        <td>Librería para implementar funcionalidades de "Drag and Drop".</td>
+        <td><code>npm i @dnd-kit/core @dnd-kit/sortable @dnd-kit/utilities</code></td>
+      </tr>
+      <tr>
+        <td><strong>React Slugify</strong></td>
+        <td>4.0.1</td>
+        <td>Librería para generar slugs (URLs amigables).</td>
+        <td><code>npm i react-slugify</code></td>
+      </tr>
+      <tr>
+        <td><strong>ESLint</strong></td>
+        <td>9.21.0</td>
+        <td>Herramienta para identificar y corregir problemas en el código.</td>
+        <td><code>npm i -D eslint</code></td>
+      </tr>
+      <tr>
+        <td><strong>PostCSS</strong></td>
+        <td>8.5.3</td>
+        <td>Herramienta para transformar CSS con JavaScript.</td>
+        <td><code>npm i -D postcss</code></td>
+      </tr>
+      <tr>
+        <td><strong>Autoprefixer</strong></td>
+        <td>10.4.21</td>
+        <td>Plugin de PostCSS para agregar prefijos de proveedores a CSS.</td>
+        <td><code>npm i -D autoprefixer</code></td>
+      </tr>
+      <tr>
+        <td><strong>@vitejs/plugin-react-swc</strong></td>
+        <td>3.8.0</td>
+        <td>Plugin de Vite para soporte de React con SWC.</td>
+        <td><code>npm i -D @vitejs/plugin-react-swc</code></td>
+      </tr>
+      <tr>
+        <td><strong>@types/react</strong></td>
+        <td>19.0.10</td>
+        <td>Tipos de TypeScript para React.</td>
+        <td><code>npm i -D @types/react</code></td>
+      </tr>
+      <tr>
+        <td><strong>@types/react-dom</strong></td>
+        <td>19.0.4</td>
+        <td>Tipos de TypeScript para React DOM.</td>
+        <td><code>npm i -D @types/react-dom</code></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## 🤗 Redes sociales 🤗
 
 - 💎 GitHub: https://github.com/brahanlider 💎
 - 💎 LinkedIn: https://www.linkedin.com/in/brahan-tunquipa-mamani-bbba23219/ 💎
-
-<!-- This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-``` -->

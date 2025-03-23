@@ -12,6 +12,7 @@ import { TSocialNetwork, TUser } from "../types";
 import { useEffect, useState } from "react";
 import DevTreeLink from "./DevTreeLink";
 import { useQueryClient } from "@tanstack/react-query";
+import Header from "./Header";
 
 type DevTreeProps = {
   data: TUser;
@@ -55,21 +56,8 @@ export default function DevTree({ data }: DevTreeProps) {
 
   return (
     <>
-      <header className="py-5 bg-slate-800">
-        <div className="flex flex-col items-center max-w-5xl mx-auto md:flex-row md:justify-between">
-          <div className="w-full p-5 lg:p-0 md:w-1/3">
-            <img src="/logo.svg" className="block w-full" />
-          </div>
-          <div className="md:w-1/3 md:flex md:justify-end">
-            <button
-              className="p-2 text-xs font-black uppercase rounded-lg cursor-pointer bg-lime-500 text-slate-800"
-              onClick={() => {}}
-            >
-              Cerrar Sesión
-            </button>
-          </div>
-        </div>
-      </header>
+      <Header />
+
       <div className="min-h-screen py-10 bg-gray-100 md:px-5">
         <main className="max-w-5xl p-10 mx-auto md:p-0">
           <NavigationTabs />

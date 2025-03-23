@@ -11,7 +11,7 @@
 - npm i @tanstack/react-query-devtools
 - npm install @headlessui/react
 - npm i @dnd-kit/core @dnd-kit/sortable @dnd-kit/utilities => DRAG AND DROP
-
+- npm i react-slugify => para el handle
 
 # [DEVTREE Front-End React](https://github.com/brahan/devrtree)
 
